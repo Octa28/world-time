@@ -21,8 +21,8 @@ while True:
         print('Sorry, that city is not in the list.')
         continue
 
-# Get the current time (using the city's time zone)
+# Getting the current time
     timezone = capital_cities[city]
-    local_time = time.strftime('%I:%M %p', time.localtime(time.time()))
+    local_time = time.strftime(' %I:%M %p ', time.localtime(time.time()))
     print(f'{city}: {local_time}')
     print()
